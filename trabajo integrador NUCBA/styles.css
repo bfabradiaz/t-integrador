@@ -1,0 +1,564 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(153, 134, 207),rgb(244, 125, 159));
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+    flex-direction: column;
+    margin: 0 10% 0 10%;
+}
+
+/* comienza navbar */
+.navbar{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 30px 10px 0;
+    
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.home{
+    color:#243C7A;
+}
+
+a:hover{
+    color:#243C7A;
+    transition: .5s;
+}
+
+.button{
+    border: solid 2px #fff;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.button:hover{
+    border-radius: 5px;
+    background: #fff;
+    color: #243C7A;
+    padding: 8px;
+    transition: .5s;
+}
+/* termina navbar */
+
+/* comienza banner */
+.banner{
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2em;
+    margin-top: 30px;
+    
+}
+
+.bannerImage{
+    width: 50%;
+    height: auto;
+    margin: 5%
+}
+
+.bannerImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bannerText{
+    width: 50%;
+    height: auto;
+    margin:auto;
+}
+
+p:first-child{
+    float: left;
+    position: relative;
+    padding-left: 10%;
+    font-size: 2vw;
+    color: #243C7A;
+    font-weight: bolder;
+}
+
+.text{
+    float: left;
+    position: relative;
+    padding-left: 10%;
+    font-size: 2vw;
+}
+
+.text span{
+    position:absolute;
+    right: -20px;
+    width: 150px;
+    background: #fff;
+    color: #fff;
+    border-left: solid 2px #000;
+    animation: letraporletra 4s infinite alternate steps(26);
+}
+   
+@keyframes letraporletra{
+    from{
+        width: 95%;
+    }
+    to{
+        width: 0;
+    }
+}
+/* termina banner */
+
+/* comienza cards */
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsContainer h2{
+    font-family: 'Roboto', sans-serif;
+    color: #243c7a;
+}
+
+.cards{
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 150px;
+    grid-template-areas: "imagen" "texto";
+    margin: 30px 0 30px 0;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.02);
+
+}
+
+.cardImage{
+    grid-area: imagen;
+    background: url("./img/mujer-presentando-proyecto_65141-109.jpg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+}
+
+
+.cardText{
+    grid-area: texto;
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cardText > h3,
+.cardText > p,
+.cardText > a{
+    font-family: 'Roboto', sans-serif;
+    color:#243C7A;
+}
+
+.cardText > a{
+    color:  #EE627D;
+}
+
+/* .cardText > a:hover{
+    color: #139EBF;
+} */
+
+/* termina cards */
+
+/* comienza about me */
+.aboutMe{
+    width: 100%;
+    height: 200px;
+    background-color: #243C7A;
+    display:flex;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.titleContainer{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.titleContainer h2{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.textContainer{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.textContainer p{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin:20px;
+    padding-left: 0;
+    letter-spacing: 1.5px;
+}
+
+
+/* termina about me */
+
+/* comienza footer */
+.footerContainer{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+/* contact form */
+.formContainer{
+    width: 40%;
+}
+
+.form{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.form h3{
+    margin: 20px 30px 10px 0;  
+}
+
+
+.form input,
+.form button{
+    display: block;
+    height: 40px;
+    margin: 20px 30px 10px 0;
+    border:none;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+    padding: 10px; 
+    color: #243C7A;
+}
+
+.form button{
+    font-weight: bolder;
+    background-color: transparent;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+}
+
+.form button:hover{
+    transition: 0.5s;
+    background-color: #ffffff;
+    color: #243C7A;
+}
+
+.form textarea{
+    display: block;
+    height: 50px;
+    margin: 20px 30px 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #243c7a;
+}
+
+/* redes */
+.redesContainer{
+    width: 60%;
+    margin-left: 30px;
+}
+
+.redes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form h3,
+.redesContainer h3{
+    font-family: 'Roboto', sans-serif;
+    color: #243c7a;
+}
+
+.fa-linkedin-in,
+.fa-instagram,
+.fa-twitter{
+    font-size: 50px;
+}
+
+
+/* termina footer */
+
+/* media queries */
+@media screen and (max-width: 1023px) {
+
+    .card{
+        grid-template-columns: 300px;
+    }
+
+    .titleContainer h2{
+        font-size: 30px;
+    }
+
+    .textContainer p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    html,body{
+        background-image:none;
+    } 
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    ul{
+        display: block;
+    }
+
+    li{
+        width: 100%;
+        height: 40px;
+        border:2px solid #9986CF;
+        border-radius: 10px;
+        background: #9986CF;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    a{
+        font-size: 1em;
+    }
+
+    a:hover{
+        display: none;
+    }
+
+    .home{
+        color:#fff;
+        margin-top:10px;
+    }
+
+    .button{
+        border: none;
+        border-radius: none;
+        padding: 8px;
+    }
+
+    .button:hover{
+        background-color: transparent;
+    }
+
+    li:hover{
+        background:#243C7A;
+        border: 2px solid #243C7A;
+        transition: .8s;
+    }
+
+    .banner{
+        display: block;
+    }
+
+    .bannerImage{
+        width: 100%;
+        margin:0;
+    }
+
+    .bannerText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    p:first-child{
+        font-size: 5vw;
+        margin-bottom: 5%;
+    }
+    .text{
+        font-size: 5vw;
+        position: relative;
+    }
+
+    @keyframes letraporletra{
+        from{
+            width: 100%;
+        }
+        to{
+            width: 0;
+        }
+    }
+
+    .cardsContainer{
+        margin-top: 20px;
+        background-image: linear-gradient(rgb(153, 134, 207),rgb(244, 125, 159));
+        padding-top: 20px;
+        height: auto;
+    }
+    .cards{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .card{
+        grid-template-columns: 300px;
+        grid-template-rows: 200px 100px;
+        line-height: 30px;
+    }
+
+    .aboutMe{
+        display: block;
+        border-radius: 0;
+        height: 250px;
+        box-sizing: border-box;
+        padding: 20px 0 20px 0;
+        background-color: #243C7A;
+        margin-bottom: 0;
+    }
+
+    .titleContainer{
+        width: 100%;
+        margin-top: 0;
+    }
+    .titleContainer h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .textContainer{
+        width: 100%;
+        background-color: #243C7A;
+    }
+    .textContainer p{
+        font-size: 3vw;
+        text-align: center;
+
+    }
+
+    .footerContainer{
+        display: block;
+        background-image: linear-gradient(rgb(244, 125, 159),rgb(153, 134, 207));
+        height: 500px;
+    }
+
+    .formContainer{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+      
+    }
+
+    .form{
+        width: 90%;
+        margin-left:5%;
+    }
+
+    .form input,
+    .form button{
+        margin-top:20px;
+    }
+
+
+    .form textarea{
+    margin-top: 20px; 
+    }
+
+    .form h3,
+    .redesContainer h3{
+        color: #243c7a;
+    }
+
+    .redesContainer{
+        width: 100%;
+        height: 150px;
+        box-sizing: border-box;
+        margin-left: 0;
+        padding: 20px 30px 5px 30px;
+     
+    }
+
+    .redes{
+        margin: 10% 0 10% 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+
+}
+
