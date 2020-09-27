@@ -546,7 +546,8 @@ p:first-child{
     }
 
 
-    .form button{
+    .form button,
+    .form textarea{
         padding-bottom: 30px;
     }
 
