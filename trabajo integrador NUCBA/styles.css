@@ -292,6 +292,7 @@ p:first-child{
 .form button{
     font-weight: bolder;
     background-color: transparent;
+    box-sizing: border-box;
     color: #ffffff;
     border: solid 2px #ffffff;
 }
@@ -544,9 +545,12 @@ p:first-child{
     margin-top: 20px; 
     }
 
-    .form textarea,
+    .form textarea{
+        height: 60px;
+    }
+
     .form button{
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .form button:hover{
