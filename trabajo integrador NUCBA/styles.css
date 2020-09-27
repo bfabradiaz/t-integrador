@@ -452,6 +452,10 @@ p:first-child{
         font-size: 5vw;
         position: relative;
     }
+    .text span{
+        width: 120px;
+       
+    }
 
     @keyframes letraporletra{
         from{
