@@ -542,12 +542,9 @@ p:first-child{
 
 
     .form textarea{
-    margin-top: 20px; 
+        margin-top: 20px; 
     }
 
-    .form textarea{
-        height: 60px;
-    }
 
     .form button{
         padding-bottom: 30px;
