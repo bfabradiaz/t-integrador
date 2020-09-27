@@ -402,7 +402,7 @@ p:first-child{
     }
 
     a:hover{
-        display: none;
+        color: #ffffff;
     }
 
     .home{
@@ -418,6 +418,7 @@ p:first-child{
 
     .button:hover{
         background-color: transparent;
+        color: #ffffff;
     }
 
     li:hover{
@@ -481,6 +482,11 @@ p:first-child{
         line-height: 30px;
     }
 
+    .cardText > a:hover{
+        color: #EE627D;
+        
+    }
+
     .aboutMe{
         display: block;
         border-radius: 0;
@@ -538,6 +544,17 @@ p:first-child{
     margin-top: 20px; 
     }
 
+    .form textarea,
+    .form button{
+        padding-bottom: 20px;
+    }
+
+    .form button:hover{
+        border: #243c7a;
+        background-color: #243c7a;
+        color: #ffffff;
+    }
+
     .form h3,
     .redesContainer h3{
         color: #243c7a;
@@ -558,7 +575,17 @@ p:first-child{
         justify-content: space-between;
     }
 
+    .fa-linkedin-in:hover{
+        color: #243c7a;
+    }
+    .fa-instagram:hover{
+        color: #243c7a;
+    }
+    .fa-twitter:hover{
+        color: #243c7a;
+    }
     
-
 }
+
+    
 
